@@ -1,0 +1,455 @@
+<Machine name='MartialAcademy' type='abstraction'>
+<Includes>
+<Attr>
+<Pos l='3' c='1' s='8'/>
+</Attr>
+<Referenced_Machine>
+<Attr>
+<Pos l='4' c='5' s='7'/>
+</Attr>
+<Name>Artists</Name>
+</Referenced_Machine>
+<Referenced_Machine>
+<Attr>
+<Pos l='4' c='14' s='9'/>
+</Attr>
+<Name>Tecniques</Name>
+</Referenced_Machine>
+</Includes>
+<Promotes>
+<Attr>
+<Pos l='5' c='1' s='8'/>
+</Attr>
+<Promoted_Operation>
+<Attr>
+<Pos l='6' c='5' s='12'/>
+</Attr>join_academy
+</Promoted_Operation>
+<Promoted_Operation>
+<Attr>
+<Pos l='6' c='19' s='8'/>
+</Attr>graduate
+</Promoted_Operation>
+<Promoted_Operation>
+<Attr>
+<Pos l='7' c='5' s='15'/>
+</Attr>insert_tecnique
+</Promoted_Operation>
+<Promoted_Operation>
+<Attr>
+<Pos l='7' c='22' s='11'/>
+</Attr>up_tecnique
+</Promoted_Operation>
+<Promoted_Operation>
+<Attr>
+<Pos l='7' c='35' s='13'/>
+</Attr>down_tecnique
+</Promoted_Operation>
+</Promotes>
+<Concrete_Constants>
+<Attr>
+<Pos l='8' c='1' s='18'/>
+</Attr>
+<Id value='capacity' typref='2701647786'>
+<Attr>
+<Pos l='9' c='5' s='8'/>
+</Attr>
+</Id>
+</Concrete_Constants>
+<Abstract_Variables>
+<Attr>
+<Pos l='12' c='1' s='18'/>
+</Attr>
+<Id value='artist_techniques' typref='4054678207'>
+<Attr>
+<Pos l='13' c='5' s='17'/>
+</Attr>
+</Id>
+</Abstract_Variables>
+<Properties>
+<Attr>
+<Pos l='10' c='1' s='10'/>
+</Attr>
+<Nary_Pred op='&amp;'>
+<Exp_Comparison op=':'>
+<Attr>
+<Pos l='11' c='14' s='1'/>
+</Attr>
+<Id value='capacity' typref='2701647786'>
+<Attr>
+<Pos l='11' c='5' s='8'/>
+</Attr>
+</Id>
+<Id value='NAT1' typref='3603043417'>
+<Attr>
+<Pos l='11' c='16' s='4'/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op='&lt;='>
+<Attr>
+<Pos l='11' c='32' s='2'/>
+</Attr>
+<Id value='capacity' typref='2701647786'>
+<Attr>
+<Pos l='11' c='23' s='8'/>
+</Attr>
+</Id>
+<Integer_Literal value='4096' typref='2701647786'>
+<Attr>
+<Pos l='11' c='35' s='4'/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
+</Nary_Pred>
+</Properties>
+<Invariant>
+<Attr>
+<Pos l='14' c='1' s='9'/>
+</Attr>
+<Exp_Comparison op=':'>
+<Attr>
+<Pos l='15' c='23' s='1'/>
+</Attr>
+<Id value='artist_techniques' typref='4054678207'>
+<Attr>
+<Pos l='15' c='5' s='17'/>
+</Attr>
+</Id>
+<Binary_Exp op='&lt;-&gt;' typref='64633476'>
+<Attr>
+<Pos l='15' c='33' s='3'/>
+</Attr>
+<Id value='ARTISTS' typref='2434887175'>
+<Attr>
+<Pos l='15' c='25' s='7'/>
+</Attr>
+</Id>
+<Id value='TECNIQUES' typref='700515738'>
+<Attr>
+<Pos l='15' c='37' s='9'/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+</Invariant>
+<Initialisation>
+<Attr>
+<Pos l='16' c='1' s='14'/>
+</Attr>
+<Assignement_Sub>
+<Attr>
+<Pos l='17' c='23' s='2'/>
+</Attr>
+<Variables>
+<Id value='artist_techniques' typref='4054678207'>
+<Attr>
+<Pos l='17' c='5' s='17'/>
+</Attr>
+</Id>
+</Variables>
+<Values>
+<EmptySet typref='3817003670'>
+<Attr>
+<Pos l='17' c='26' s='2'/>
+</Attr>
+</EmptySet>
+</Values>
+</Assignement_Sub>
+</Initialisation>
+<Operations>
+<Operation name='check_technical'>
+<Attr>
+<Pos l='19' c='5' s='15' endLine='25'/>
+</Attr>
+<Input_Parameters>
+<Id value='aa' typref='4007227516'>
+<Attr>
+<Pos l='19' c='21' s='2'/>
+</Attr>
+</Id>
+<Id value='tt' typref='1390633129'>
+<Attr>
+<Pos l='19' c='25' s='2'/>
+</Attr>
+</Id>
+</Input_Parameters>
+<Precondition>
+<Nary_Pred op='&amp;'>
+<Exp_Comparison op=':'>
+<Attr>
+<Pos l='20' c='12' s='1'/>
+</Attr>
+<Id value='aa' typref='4007227516'>
+<Attr>
+<Pos l='20' c='9' s='2'/>
+</Attr>
+</Id>
+<Id value='ARTISTS' typref='2434887175'>
+<Attr>
+<Pos l='20' c='14' s='7'/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=':'>
+<Attr>
+<Pos l='20' c='27' s='1'/>
+</Attr>
+<Id value='tt' typref='1390633129'>
+<Attr>
+<Pos l='20' c='24' s='2'/>
+</Attr>
+</Id>
+<Id value='TECNIQUES' typref='700515738'>
+<Attr>
+<Pos l='20' c='29' s='9'/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Binary_Pred op='=&gt;'>
+<Attr>
+<Pos l='21' c='24' s='2'/>
+</Attr>
+<Exp_Comparison op=':'>
+<Attr>
+<Pos l='21' c='15' s='1'/>
+</Attr>
+<Id value='aa' typref='4007227516'>
+<Attr>
+<Pos l='21' c='12' s='2'/>
+</Attr>
+</Id>
+<Id value='whites' typref='2434887175'>
+<Attr>
+<Pos l='21' c='17' s='6'/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=':'>
+<Attr>
+<Pos l='21' c='30' s='1'/>
+</Attr>
+<Id value='tt' typref='1390633129'>
+<Attr>
+<Pos l='21' c='27' s='2'/>
+</Attr>
+</Id>
+<Id value='t_whites' typref='700515738'>
+<Attr>
+<Pos l='21' c='32' s='8'/>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Binary_Pred>
+<Binary_Pred op='=&gt;'>
+<Attr>
+<Pos l='21' c='58' s='2'/>
+</Attr>
+<Exp_Comparison op=':'>
+<Attr>
+<Pos l='21' c='48' s='1'/>
+</Attr>
+<Id value='aa' typref='4007227516'>
+<Attr>
+<Pos l='21' c='45' s='2'/>
+</Attr>
+</Id>
+<Id value='colours' typref='2434887175'>
+<Attr>
+<Pos l='21' c='50' s='7'/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=':'>
+<Attr>
+<Pos l='21' c='64' s='1'/>
+</Attr>
+<Id value='tt' typref='1390633129'>
+<Attr>
+<Pos l='21' c='61' s='2'/>
+</Attr>
+</Id>
+<Id value='t_colours' typref='700515738'>
+<Attr>
+<Pos l='21' c='66' s='9'/>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Binary_Pred>
+<Binary_Pred op='=&gt;'>
+<Attr>
+<Pos l='22' c='24' s='2'/>
+</Attr>
+<Exp_Comparison op=':'>
+<Attr>
+<Pos l='22' c='15' s='1'/>
+</Attr>
+<Id value='aa' typref='4007227516'>
+<Attr>
+<Pos l='22' c='12' s='2'/>
+</Attr>
+</Id>
+<Id value='blacks' typref='2434887175'>
+<Attr>
+<Pos l='22' c='17' s='6'/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=':'>
+<Attr>
+<Pos l='22' c='30' s='1'/>
+</Attr>
+<Id value='tt' typref='1390633129'>
+<Attr>
+<Pos l='22' c='27' s='2'/>
+</Attr>
+</Id>
+<Id value='t_blacks' typref='700515738'>
+<Attr>
+<Pos l='22' c='32' s='8'/>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Binary_Pred>
+<Binary_Pred op='=&gt;'>
+<Attr>
+<Pos l='22' c='58' s='2'/>
+</Attr>
+<Exp_Comparison op=':'>
+<Attr>
+<Pos l='22' c='48' s='1'/>
+</Attr>
+<Id value='aa' typref='4007227516'>
+<Attr>
+<Pos l='22' c='45' s='2'/>
+</Attr>
+</Id>
+<Id value='masters' typref='2434887175'>
+<Attr>
+<Pos l='22' c='50' s='7'/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=':'>
+<Attr>
+<Pos l='22' c='64' s='1'/>
+</Attr>
+<Id value='tt' typref='1390633129'>
+<Attr>
+<Pos l='22' c='61' s='2'/>
+</Attr>
+</Id>
+<Id value='t_masters' typref='700515738'>
+<Attr>
+<Pos l='22' c='66' s='9'/>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Binary_Pred>
+</Nary_Pred>
+</Precondition>
+<Body>
+<Assignement_Sub>
+<Attr>
+<Pos l='24' c='27' s='2'/>
+</Attr>
+<Variables>
+<Id value='artist_techniques' typref='4054678207'>
+<Attr>
+<Pos l='24' c='9' s='17'/>
+</Attr>
+</Id>
+</Variables>
+<Values>
+<Binary_Exp op='\/' typref='4054678207'>
+<Attr>
+<Pos l='24' c='48' s='2'/>
+</Attr>
+<Id value='artist_techniques' typref='4054678207'>
+<Attr>
+<Pos l='24' c='30' s='17'/>
+</Attr>
+</Id>
+<Nary_Exp op='{' typref='4054678207'>
+<Attr>
+<Pos l='24' c='51' s='1'/>
+</Attr>
+<Binary_Exp op='|-&gt;' typref='3053460804'>
+<Attr>
+<Pos l='24' c='55' s='3'/>
+</Attr>
+<Id value='aa' typref='4007227516'>
+<Attr>
+<Pos l='24' c='52' s='2'/>
+</Attr>
+</Id>
+<Id value='tt' typref='1390633129'>
+<Attr>
+<Pos l='24' c='59' s='2'/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Nary_Exp>
+</Binary_Exp>
+</Values>
+</Assignement_Sub>
+</Body>
+</Operation>
+</Operations>
+<TypeInfos>
+<Type id='2701647786'>
+<Id value='INTEGER'/>
+</Type>
+<Type id='4054678207'>
+<Unary_Exp op='POW'>
+<Binary_Exp op='*'>
+<Id value='ARTISTS'/>
+<Id value='TECNIQUES'/>
+</Binary_Exp>
+</Unary_Exp>
+</Type>
+<Type id='3603043417'>
+<Unary_Exp op='POW'>
+<Id value='INTEGER'/>
+</Unary_Exp>
+</Type>
+<Type id='64633476'>
+<Unary_Exp op='POW'>
+<Unary_Exp op='POW'>
+<Binary_Exp op='*'>
+<Id value='ARTISTS'/>
+<Id value='TECNIQUES'/>
+</Binary_Exp>
+</Unary_Exp>
+</Unary_Exp>
+</Type>
+<Type id='2434887175'>
+<Unary_Exp op='POW'>
+<Id value='ARTISTS'/>
+</Unary_Exp>
+</Type>
+<Type id='700515738'>
+<Unary_Exp op='POW'>
+<Id value='TECNIQUES'/>
+</Unary_Exp>
+</Type>
+<Type id='3817003670'>
+<Unary_Exp op='POW'>
+<Generic_Type/>
+</Unary_Exp>
+</Type>
+<Type id='4007227516'>
+<Id value='ARTISTS'/>
+</Type>
+<Type id='1390633129'>
+<Id value='TECNIQUES'/>
+</Type>
+<Type id='3053460804'>
+<Binary_Exp op='*'>
+<Id value='ARTISTS'/>
+<Id value='TECNIQUES'/>
+</Binary_Exp>
+</Type>
+</TypeInfos>
+
+</Machine>

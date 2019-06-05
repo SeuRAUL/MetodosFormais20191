@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<db_xml>
+    <atelierb version="3_7_ubuntu-cvs" />
+    <project decomp_dir="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\expand_src" old_decomp_dir="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\src">
+        <!-- Definition directory list -->
+        <definition_dir path="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy" />
+        <!-- Component file list -->
+        <component_file path="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy" name="Artists" suffix="mch" user="seu_raul">
+            <component name="Artists" type="specification" />
+        </component_file>
+        <component_file path="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy" name="MartialAcademy" suffix="mch" user="seu_raul">
+            <component name="MartialAcademy" type="specification" />
+        </component_file>
+        <component_file path="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy" name="Tecniques" suffix="mch" user="seu_raul">
+            <component name="Tecniques" type="specification" />
+        </component_file>
+    </project>
+</db_xml>

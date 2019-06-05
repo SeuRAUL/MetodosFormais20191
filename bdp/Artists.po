@@ -1,0 +1,62 @@
+THEORY ProofList IS
+_f(1) & _f(2) & _f(8) & _f(12) & graduate.9,(_f(18) & _f(17) & _f(15) & _f(3) & _f(6) => _f(30));
+_f(1) & _f(2) & _f(8) & _f(12) & graduate.8,(_f(18) & _f(17) & _f(15) & _f(3) & _f(28) => _f(29));
+_f(1) & _f(2) & _f(8) & _f(12) & graduate.7,(_f(18) & _f(17) & _f(15) & _f(3) & _f(24) => _f(27));
+_f(1) & _f(2) & _f(8) & _f(12) & graduate.6,(_f(18) & _f(14) & _f(3) & _f(6) => _f(26));
+_f(1) & _f(2) & _f(8) & _f(12) & graduate.5,(_f(18) & _f(14) & _f(3) & _f(24) => _f(25));
+_f(1) & _f(2) & _f(8) & _f(12) & graduate.4,(_f(18) & _f(14) & _f(3) & _f(20) => _f(23));
+_f(1) & _f(2) & _f(8) & _f(12) & graduate.3,(_f(13) & _f(3) & _f(6) => _f(22));
+_f(1) & _f(2) & _f(8) & _f(12) & graduate.2,(_f(13) & _f(3) & _f(20) => _f(21));
+_f(1) & _f(2) & _f(8) & _f(12) & graduate.1,(_f(13) & _f(3) & _f(4) => _f(19));
+_f(1) & _f(2) & _f(8) & _f(9) & join_academy.2,(_f(3) & _f(6) => _f(11));
+_f(1) & _f(2) & _f(8) & _f(9) & join_academy.1,(_f(3) & _f(4) => _f(10));
+_f(1) & _f(2) & Initialisation.2,(_f(3) & _f(6) => _f(7));
+_f(1) & _f(2) & Initialisation.1,(_f(3) & _f(4) => _f(5))
+END
+&
+THEORY Formulas IS
+((NAT) = (((0) .. (2147483647)))) & ((INT) = (((-2147483648) .. (2147483647))));
+ARTISTS: FIN(INTEGER) & not(ARTISTS = {}) & ((ARTISTS) : (FIN(ARTISTS))) & ((card(ARTISTS)) = (10));
+"Invariant is preserved";
+"Check invariant whites : POW( ARTISTS)";
+{} : POW( ARTISTS);
+"Check invariant ((((((((whites) /\ (colours))) /\ (blacks))) /\ (masters))) = ({}))";
+(((((((({}) /\ ({}))) /\ ({}))) /\ ({}))) = ({}));
+whites : POW( ARTISTS) & colours : POW( ARTISTS) & blacks : POW( ARTISTS) & masters : POW( ARTISTS) & ((((((((whites) /\ (colours))) /\ (blacks))) /\ (masters))) = ({}));
+((nn) : (ARTISTS)) & not(nn : whites) & not(nn : colours) & not(nn : blacks) & not(nn : masters);
+((whites) \/ (({nn}))) : POW( ARTISTS);
+((((((((((whites) \/ (({nn})))) /\ (colours))) /\ (blacks))) /\ (masters))) = ({}));
+((aa) : (ARTISTS)) & ((aa) : (((((whites) \/ (colours))) \/ (blacks))));
+((aa) : (whites));
+((aa) : (colours));
+((aa) : (blacks));
+not(((aa) : (blacks)));
+not(((aa) : (colours)));
+not(((aa) : (whites)));
+(whites - ({aa})) : POW( ARTISTS);
+"Check invariant colours : POW( ARTISTS)";
+((colours) \/ (({aa}))) : POW( ARTISTS);
+(((((((((whites - ({aa}))) /\ (((colours) \/ (({aa})))))) /\ (blacks))) /\ (masters))) = ({}));
+(colours - ({aa})) : POW( ARTISTS);
+"Check invariant blacks : POW( ARTISTS)";
+((blacks) \/ (({aa}))) : POW( ARTISTS);
+((((((((whites) /\ ((colours - ({aa}))))) /\ (((blacks) \/ (({aa})))))) /\ (masters))) = ({}));
+(blacks - ({aa})) : POW( ARTISTS);
+"Check invariant masters : POW( ARTISTS)";
+((masters) \/ (({aa}))) : POW( ARTISTS);
+((((((((whites) /\ (colours))) /\ ((blacks - ({aa}))))) /\ (((masters) \/ (({aa})))))) = ({}));
+ARTISTS: FIN(INTEGER) & not(ARTISTS = {});
+((ARTISTS) : (FIN(ARTISTS)));
+masters : POW( ARTISTS);
+blacks : POW( ARTISTS);
+colours : POW( ARTISTS);
+whites : POW( ARTISTS);
+not(nn : blacks);
+not(nn : colours);
+not(nn : whites);
+((nn) : (ARTISTS));
+((aa) : (ARTISTS))
+END
+&
+THEORY EnumerateX
+END

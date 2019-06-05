@@ -1,0 +1,95 @@
+THEORY ProofList IS
+_f(1) & _f(2) & _f(8) & _f(42) & down_tecnique.9,(_f(34) & _f(33) & _f(43) & _f(3) & _f(6) => _f(48));
+_f(1) & _f(2) & _f(8) & _f(42) & down_tecnique.8,(_f(34) & _f(33) & _f(43) & _f(3) & _f(26) => _f(47));
+_f(1) & _f(2) & _f(8) & _f(42) & down_tecnique.7,(_f(34) & _f(33) & _f(43) & _f(3) & _f(23) => _f(24));
+_f(1) & _f(2) & _f(8) & _f(42) & down_tecnique.6,(_f(34) & _f(32) & _f(3) & _f(6) => _f(46));
+_f(1) & _f(2) & _f(8) & _f(42) & down_tecnique.5,(_f(34) & _f(32) & _f(3) & _f(23) => _f(40));
+_f(1) & _f(2) & _f(8) & _f(42) & down_tecnique.4,(_f(34) & _f(32) & _f(3) & _f(20) => _f(21));
+_f(1) & _f(2) & _f(8) & _f(42) & down_tecnique.3,(_f(31) & _f(3) & _f(6) => _f(45));
+_f(1) & _f(2) & _f(8) & _f(42) & down_tecnique.2,(_f(31) & _f(3) & _f(20) => _f(38));
+_f(1) & _f(2) & _f(8) & _f(42) & down_tecnique.1,(_f(31) & _f(3) & _f(4) => _f(18));
+_f(1) & _f(2) & _f(8) & _f(29) & up_tecnique.9,(_f(35) & _f(34) & _f(32) & _f(3) & _f(6) => _f(41));
+_f(1) & _f(2) & _f(8) & _f(29) & up_tecnique.8,(_f(35) & _f(34) & _f(32) & _f(3) & _f(26) => _f(27));
+_f(1) & _f(2) & _f(8) & _f(29) & up_tecnique.7,(_f(35) & _f(34) & _f(32) & _f(3) & _f(23) => _f(40));
+_f(1) & _f(2) & _f(8) & _f(29) & up_tecnique.6,(_f(35) & _f(31) & _f(3) & _f(6) => _f(39));
+_f(1) & _f(2) & _f(8) & _f(29) & up_tecnique.5,(_f(35) & _f(31) & _f(3) & _f(23) => _f(24));
+_f(1) & _f(2) & _f(8) & _f(29) & up_tecnique.4,(_f(35) & _f(31) & _f(3) & _f(20) => _f(38));
+_f(1) & _f(2) & _f(8) & _f(29) & up_tecnique.3,(_f(30) & _f(3) & _f(6) => _f(37));
+_f(1) & _f(2) & _f(8) & _f(29) & up_tecnique.2,(_f(30) & _f(3) & _f(20) => _f(21));
+_f(1) & _f(2) & _f(8) & _f(29) & up_tecnique.1,(_f(30) & _f(3) & _f(4) => _f(36));
+_f(1) & _f(2) & _f(8) & _f(9) & insert_tecnique.8,(_f(17) & _f(16) & _f(15) & _f(13) & _f(3) & _f(6) => _f(28));
+_f(1) & _f(2) & _f(8) & _f(9) & insert_tecnique.7,(_f(17) & _f(16) & _f(15) & _f(13) & _f(3) & _f(26) => _f(27));
+_f(1) & _f(2) & _f(8) & _f(9) & insert_tecnique.6,(_f(17) & _f(16) & _f(12) & _f(3) & _f(6) => _f(25));
+_f(1) & _f(2) & _f(8) & _f(9) & insert_tecnique.5,(_f(17) & _f(16) & _f(12) & _f(3) & _f(23) => _f(24));
+_f(1) & _f(2) & _f(8) & _f(9) & insert_tecnique.4,(_f(17) & _f(11) & _f(3) & _f(6) => _f(22));
+_f(1) & _f(2) & _f(8) & _f(9) & insert_tecnique.3,(_f(17) & _f(11) & _f(3) & _f(20) => _f(21));
+_f(1) & _f(2) & _f(8) & _f(9) & insert_tecnique.2,(_f(10) & _f(3) & _f(6) => _f(19));
+_f(1) & _f(2) & _f(8) & _f(9) & insert_tecnique.1,(_f(10) & _f(3) & _f(4) => _f(18));
+_f(1) & _f(2) & Initialisation.2,(_f(3) & _f(6) => _f(7));
+_f(1) & _f(2) & Initialisation.1,(_f(3) & _f(4) => _f(5))
+END
+&
+THEORY Formulas IS
+((NAT) = (((0) .. (2147483647)))) & ((INT) = (((-2147483648) .. (2147483647))));
+TECNIQUES: FIN(INTEGER) & not(TECNIQUES = {}) & ((TECNIQUES) : (FIN(TECNIQUES))) & ((card(TECNIQUES)) = (100));
+"Invariant is preserved";
+"Check invariant t_whites : POW( TECNIQUES)";
+{} : POW( TECNIQUES);
+"Check invariant ((((((((t_whites) /\ (t_colours))) /\ (t_blacks))) /\ (t_masters))) = ({}))";
+(((((((({}) /\ ({}))) /\ ({}))) /\ ({}))) = ({}));
+t_whites : POW( TECNIQUES) & t_colours : POW( TECNIQUES) & t_blacks : POW( TECNIQUES) & t_masters : POW( TECNIQUES) & ((((((((t_whites) /\ (t_colours))) /\ (t_blacks))) /\ (t_masters))) = ({}));
+((tt) : (TECNIQUES)) & not(tt : t_whites) & not(tt : t_colours) & not(tt : t_blacks) & not(tt : t_masters) & ((grade) : (((1) .. (4))));
+((grade) = (1));
+((grade) = (2));
+((grade) = (3));
+((grade) = (4));
+not(((grade) = (4)));
+not(((grade) = (3)));
+not(((grade) = (2)));
+not(((grade) = (1)));
+((t_whites) \/ (({tt}))) : POW( TECNIQUES);
+((((((((((t_whites) \/ (({tt})))) /\ (t_colours))) /\ (t_blacks))) /\ (t_masters))) = ({}));
+"Check invariant t_colours : POW( TECNIQUES)";
+((t_colours) \/ (({tt}))) : POW( TECNIQUES);
+((((((((t_whites) /\ (((t_colours) \/ (({tt})))))) /\ (t_blacks))) /\ (t_masters))) = ({}));
+"Check invariant t_blacks : POW( TECNIQUES)";
+((t_blacks) \/ (({tt}))) : POW( TECNIQUES);
+((((((((t_whites) /\ (t_colours))) /\ (((t_blacks) \/ (({tt})))))) /\ (t_masters))) = ({}));
+"Check invariant t_masters : POW( TECNIQUES)";
+((t_masters) \/ (({tt}))) : POW( TECNIQUES);
+((((((((t_whites) /\ (t_colours))) /\ (t_blacks))) /\ (((t_masters) \/ (({tt})))))) = ({}));
+((tt) : (TECNIQUES)) & ((tt) : (((((t_whites) \/ (t_colours))) \/ (t_blacks))));
+((tt) : (t_whites));
+((tt) : (t_colours));
+((tt) : (t_blacks));
+not(((tt) : (t_blacks)));
+not(((tt) : (t_colours)));
+not(((tt) : (t_whites)));
+(t_whites - ({tt})) : POW( TECNIQUES);
+(((((((((t_whites - ({tt}))) /\ (((t_colours) \/ (({tt})))))) /\ (t_blacks))) /\ (t_masters))) = ({}));
+(t_colours - ({tt})) : POW( TECNIQUES);
+((((((((t_whites) /\ ((t_colours - ({tt}))))) /\ (((t_blacks) \/ (({tt})))))) /\ (t_masters))) = ({}));
+(t_blacks - ({tt})) : POW( TECNIQUES);
+((((((((t_whites) /\ (t_colours))) /\ ((t_blacks - ({tt}))))) /\ (((t_masters) \/ (({tt})))))) = ({}));
+((tt) : (TECNIQUES)) & ((tt) : (((((t_colours) \/ (t_blacks))) \/ (t_masters))));
+((tt) : (t_masters));
+not(((tt) : (t_masters)));
+((((((((((t_whites) \/ (({tt})))) /\ ((t_colours - ({tt}))))) /\ (t_blacks))) /\ (t_masters))) = ({}));
+((((((((t_whites) /\ (((t_colours) \/ (({tt})))))) /\ ((t_blacks - ({tt}))))) /\ (t_masters))) = ({}));
+(t_masters - ({tt})) : POW( TECNIQUES);
+((((((((t_whites) /\ (t_colours))) /\ (((t_blacks) \/ (({tt})))))) /\ ((t_masters - ({tt}))))) = ({}));
+TECNIQUES: FIN(INTEGER) & not(TECNIQUES = {});
+((TECNIQUES) : (FIN(TECNIQUES)));
+t_masters : POW( TECNIQUES);
+t_blacks : POW( TECNIQUES);
+t_colours : POW( TECNIQUES);
+t_whites : POW( TECNIQUES);
+not(tt : t_masters);
+not(tt : t_blacks);
+not(tt : t_colours);
+not(tt : t_whites);
+((tt) : (TECNIQUES))
+END
+&
+THEORY EnumerateX
+END

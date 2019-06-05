@@ -1,0 +1,33 @@
+THEORY ProofList IS
+_f(1) & _f(2) & _f(3) & _f(4) & _f(10) & _f(11) & check_technical.1,(_f(8) => _f(12));
+_f(1) & _f(2) & _f(3) & _f(4) & Initialisation.1,(_f(5) & _f(5) & _f(5) & _f(5) & _f(6) & _f(7) & _f(7) & _f(7) & _f(7) & _f(6) & _f(8) => _f(9))
+END
+&
+THEORY Formulas IS
+((NAT) = (((0) .. (2147483647)))) & ((INT) = (((-2147483648) .. (2147483647))));
+((capacity) : ((NAT-{0}))) & (capacity <= 4096);
+ARTISTS: FIN(INTEGER) & not(ARTISTS = {}) & TECNIQUES: FIN(INTEGER) & not(TECNIQUES = {}) & ((ARTISTS) : (FIN(ARTISTS))) & ((card(ARTISTS)) = (10)) & ((TECNIQUES) : (FIN(TECNIQUES))) & ((card(TECNIQUES)) = (100));
+whites : POW( ARTISTS) & colours : POW( ARTISTS) & blacks : POW( ARTISTS) & masters : POW( ARTISTS) & ((((((((whites) /\ (colours))) /\ (blacks))) /\ (masters))) = ({})) & t_whites : POW( TECNIQUES) & t_colours : POW( TECNIQUES) & t_blacks : POW( TECNIQUES) & t_masters : POW( TECNIQUES) & ((((((((t_whites) /\ (t_colours))) /\ (t_blacks))) /\ (t_masters))) = ({}));
+{} : POW( ARTISTS);
+(((((((({}) /\ ({}))) /\ ({}))) /\ ({}))) = ({}));
+{} : POW( TECNIQUES);
+"Invariant is preserved";
+(({}) : (((ARTISTS) <-> (TECNIQUES))));
+((artist_techniques) : (((ARTISTS) <-> (TECNIQUES))));
+((aa) : (ARTISTS)) & ((tt) : (TECNIQUES)) & ((((aa) : (whites))) => (((tt) : (t_whites)))) & ((((aa) : (colours))) => (((tt) : (t_colours)))) & ((((aa) : (blacks))) => (((tt) : (t_blacks)))) & ((((aa) : (masters))) => (((tt) : (t_masters))));
+((((artist_techniques) \/ (({((aa) |-> (tt))})))) : (((ARTISTS) <-> (TECNIQUES))));
+btrue;
+((capacity) : ((NAT-{0})));
+((((aa) : (whites))) => (btrue));
+((((aa) : (colours))) => (btrue));
+((((aa) : (blacks))) => (btrue));
+((((aa) : (masters))) => (btrue));
+((((aa) : (blacks))) => (((tt) : (t_blacks))));
+((((aa) : (colours))) => (((tt) : (t_colours))));
+((((aa) : (whites))) => (((tt) : (t_whites))));
+((tt) : (TECNIQUES));
+((aa) : (ARTISTS))
+END
+&
+THEORY EnumerateX
+END

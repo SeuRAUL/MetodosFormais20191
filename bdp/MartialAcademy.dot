@@ -1,3 +1,6 @@
 digraph {
+Artists [ label=" Artists " shape= box ]
+MartialAcademy [ label=" MartialAcademy " shape= box ]
+Tecniques [ label=" Tecniques " shape= box ]
 
 }

@@ -1,0 +1,1888 @@
+<Proof_Obligations>
+<Define name="B definitions">
+<Nary_Pred op="&amp;">
+<Exp_Comparison op="=">
+<Id value="NAT"/>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Id value="MAXINT"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id value="INT"/>
+<Binary_Exp op="..">
+<Id value="MININT"/>
+<Id value="MAXINT"/>
+</Binary_Exp>
+</Exp_Comparison>
+</Nary_Pred>
+</Define>
+<Define name="ctx"/>
+<Define name="seext"/>
+<Define name="lprp">
+<Attr>
+<Pos l="10" s="10" c="1"/>
+</Attr>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="11" s="1" c="14"/>
+</Attr>
+<Id typref="2701647786" value="capacity" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:5:1:1:1">
+<Attr>
+<Pos l="11" s="8" c="5"/>
+</Attr>
+</Id>
+<Id typref="3603043417" value="NAT1" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:5:1:1:2">
+<Attr>
+<Pos l="11" s="4" c="16"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op="&lt;=">
+<Attr>
+<Pos l="11" s="2" c="32"/>
+</Attr>
+<Id typref="2701647786" value="capacity" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:5:1:2:1">
+<Attr>
+<Pos l="11" s="8" c="23"/>
+</Attr>
+</Id>
+<Integer_Literal typref="2701647786" value="4096" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:5:1:2:2">
+<Attr>
+<Pos l="11" s="4" c="35"/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
+</Nary_Pred>
+</Define>
+<Define name="inprp">
+<Attr>
+<Pos l="2" s="4" c="1"/>
+</Attr>
+<Set>
+<Id typref="2434887175" value="ARTISTS" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Artists.bxml:1:1:1:1">
+<Attr>
+<Pos l="3" s="7" c="5"/>
+</Attr>
+</Id>
+</Set>
+<Attr>
+<Pos l="2" s="4" c="1"/>
+</Attr>
+<Set>
+<Id typref="700515738" value="TECNIQUES" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Tecniques.bxml:1:1:1:1">
+<Attr>
+<Pos l="3" s="9" c="3"/>
+</Attr>
+</Id>
+</Set>
+<Attr>
+<Pos l="4" s="10" c="1"/>
+</Attr>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="5" s="1" c="13"/>
+</Attr>
+<Id typref="2434887175" value="ARTISTS" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Artists.bxml:1:3:1:1:1">
+<Attr>
+<Pos l="5" s="7" c="5"/>
+</Attr>
+</Id>
+<Unary_Exp op="FIN" typref="1918468540">
+<Attr>
+<Pos l="5" s="3" c="15"/>
+</Attr>
+<Id typref="2434887175" value="ARTISTS" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Artists.bxml:1:3:1:1:2:1">
+<Attr>
+<Pos l="5" s="7" c="19"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Attr>
+<Pos l="5" s="1" c="44"/>
+</Attr>
+<Unary_Exp op="card" typref="2701647786">
+<Attr>
+<Pos l="5" s="4" c="30"/>
+</Attr>
+<Id typref="2434887175" value="ARTISTS" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Artists.bxml:1:3:1:2:1:1">
+<Attr>
+<Pos l="5" s="7" c="35"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Integer_Literal typref="2701647786" value="10" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Artists.bxml:1:3:1:2:2">
+<Attr>
+<Pos l="5" s="2" c="46"/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
+</Nary_Pred>
+<Attr>
+<Pos l="4" s="10" c="1"/>
+</Attr>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="5" s="1" c="13"/>
+</Attr>
+<Id typref="700515738" value="TECNIQUES" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Tecniques.bxml:1:3:1:1:1">
+<Attr>
+<Pos l="5" s="9" c="3"/>
+</Attr>
+</Id>
+<Unary_Exp op="FIN" typref="892435817">
+<Attr>
+<Pos l="5" s="3" c="15"/>
+</Attr>
+<Id typref="700515738" value="TECNIQUES" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Tecniques.bxml:1:3:1:1:2:1">
+<Attr>
+<Pos l="5" s="9" c="19"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Attr>
+<Pos l="6" s="1" c="19"/>
+</Attr>
+<Unary_Exp op="card" typref="2701647786">
+<Attr>
+<Pos l="6" s="4" c="3"/>
+</Attr>
+<Id typref="700515738" value="TECNIQUES" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Tecniques.bxml:1:3:1:2:1:1">
+<Attr>
+<Pos l="6" s="9" c="8"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Integer_Literal typref="2701647786" value="100" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Tecniques.bxml:1:3:1:2:2">
+<Attr>
+<Pos l="6" s="3" c="21"/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
+</Nary_Pred>
+</Define>
+<Define name="inext">
+<Attr>
+<Pos l="8" s="9" c="1"/>
+</Attr>
+<Nary_Pred op="&amp;">
+<Exp_Comparison initialTag="whites : POW( ARTISTS)" op="&lt;:">
+<Attr>
+<Pos l="9" s="2" c="12"/>
+</Attr>
+<Id typref="2434887175" value="whites" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Artists.bxml:1:4:1:1:1">
+<Attr>
+<Pos l="9" s="6" c="5"/>
+</Attr>
+</Id>
+<Id typref="2434887175" value="ARTISTS" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Artists.bxml:1:4:1:1:2">
+<Attr>
+<Pos l="9" s="7" c="15"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison initialTag="colours : POW( ARTISTS)" op="&lt;:">
+<Attr>
+<Pos l="9" s="2" c="34"/>
+</Attr>
+<Id typref="2434887175" value="colours" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Artists.bxml:1:4:1:2:1">
+<Attr>
+<Pos l="9" s="7" c="26"/>
+</Attr>
+</Id>
+<Id typref="2434887175" value="ARTISTS" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Artists.bxml:1:4:1:2:2">
+<Attr>
+<Pos l="9" s="7" c="37"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison initialTag="blacks : POW( ARTISTS)" op="&lt;:">
+<Attr>
+<Pos l="9" s="2" c="54"/>
+</Attr>
+<Id typref="2434887175" value="blacks" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Artists.bxml:1:4:1:3:1">
+<Attr>
+<Pos l="9" s="6" c="47"/>
+</Attr>
+</Id>
+<Id typref="2434887175" value="ARTISTS" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Artists.bxml:1:4:1:3:2">
+<Attr>
+<Pos l="9" s="7" c="57"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison initialTag="masters : POW( ARTISTS)" op="&lt;:">
+<Attr>
+<Pos l="9" s="2" c="75"/>
+</Attr>
+<Id typref="2434887175" value="masters" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Artists.bxml:1:4:1:4:1">
+<Attr>
+<Pos l="9" s="7" c="67"/>
+</Attr>
+</Id>
+<Id typref="2434887175" value="ARTISTS" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Artists.bxml:1:4:1:4:2">
+<Attr>
+<Pos l="9" s="7" c="78"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison initialTag="((((((((whites) /\ (colours))) /\ (blacks))) /\ (masters))) = ({}))" op="=">
+<Attr>
+<Pos l="10" s="1" c="46"/>
+</Attr>
+<Binary_Exp op="/\" typref="2434887175">
+<Attr>
+<Pos l="10" s="2" c="35"/>
+</Attr>
+<Binary_Exp op="/\" typref="2434887175">
+<Attr>
+<Pos l="10" s="2" c="25"/>
+</Attr>
+<Binary_Exp op="/\" typref="2434887175">
+<Attr>
+<Pos l="10" s="2" c="14"/>
+</Attr>
+<Id typref="2434887175" value="whites" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Artists.bxml:1:4:1:5:1:1:1:1">
+<Attr>
+<Pos l="10" s="6" c="7"/>
+</Attr>
+</Id>
+<Id typref="2434887175" value="colours" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Artists.bxml:1:4:1:5:1:1:1:2">
+<Attr>
+<Pos l="10" s="7" c="17"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Id typref="2434887175" value="blacks" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Artists.bxml:1:4:1:5:1:1:2">
+<Attr>
+<Pos l="10" s="6" c="28"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Id typref="2434887175" value="masters" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Artists.bxml:1:4:1:5:1:2">
+<Attr>
+<Pos l="10" s="7" c="38"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<EmptySet typref="3817003670" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Artists.bxml:1:4:1:5:2">
+<Attr>
+<Pos l="10" s="2" c="48"/>
+</Attr>
+</EmptySet>
+</Exp_Comparison>
+</Nary_Pred>
+<Attr>
+<Pos l="9" s="9" c="1"/>
+</Attr>
+<Nary_Pred op="&amp;">
+<Exp_Comparison initialTag="t_whites : POW( TECNIQUES)" op="&lt;:">
+<Attr>
+<Pos l="10" s="2" c="12"/>
+</Attr>
+<Id typref="700515738" value="t_whites" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Tecniques.bxml:1:4:1:1:1">
+<Attr>
+<Pos l="10" s="8" c="3"/>
+</Attr>
+</Id>
+<Id typref="700515738" value="TECNIQUES" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Tecniques.bxml:1:4:1:1:2">
+<Attr>
+<Pos l="10" s="9" c="15"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison initialTag="t_colours : POW( TECNIQUES)" op="&lt;:">
+<Attr>
+<Pos l="10" s="2" c="37"/>
+</Attr>
+<Id typref="700515738" value="t_colours" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Tecniques.bxml:1:4:1:2:1">
+<Attr>
+<Pos l="10" s="9" c="27"/>
+</Attr>
+</Id>
+<Id typref="700515738" value="TECNIQUES" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Tecniques.bxml:1:4:1:2:2">
+<Attr>
+<Pos l="10" s="9" c="40"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison initialTag="t_blacks : POW( TECNIQUES)" op="&lt;:">
+<Attr>
+<Pos l="10" s="2" c="61"/>
+</Attr>
+<Id typref="700515738" value="t_blacks" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Tecniques.bxml:1:4:1:3:1">
+<Attr>
+<Pos l="10" s="8" c="52"/>
+</Attr>
+</Id>
+<Id typref="700515738" value="TECNIQUES" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Tecniques.bxml:1:4:1:3:2">
+<Attr>
+<Pos l="10" s="9" c="64"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison initialTag="t_masters : POW( TECNIQUES)" op="&lt;:">
+<Attr>
+<Pos l="10" s="2" c="86"/>
+</Attr>
+<Id typref="700515738" value="t_masters" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Tecniques.bxml:1:4:1:4:1">
+<Attr>
+<Pos l="10" s="9" c="76"/>
+</Attr>
+</Id>
+<Id typref="700515738" value="TECNIQUES" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Tecniques.bxml:1:4:1:4:2">
+<Attr>
+<Pos l="10" s="9" c="89"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison initialTag="((((((((t_whites) /\ (t_colours))) /\ (t_blacks))) /\ (t_masters))) = ({}))" op="=">
+<Attr>
+<Pos l="11" s="1" c="52"/>
+</Attr>
+<Binary_Exp op="/\" typref="700515738">
+<Attr>
+<Pos l="11" s="2" c="39"/>
+</Attr>
+<Binary_Exp op="/\" typref="700515738">
+<Attr>
+<Pos l="11" s="2" c="27"/>
+</Attr>
+<Binary_Exp op="/\" typref="700515738">
+<Attr>
+<Pos l="11" s="2" c="14"/>
+</Attr>
+<Id typref="700515738" value="t_whites" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Tecniques.bxml:1:4:1:5:1:1:1:1">
+<Attr>
+<Pos l="11" s="8" c="5"/>
+</Attr>
+</Id>
+<Id typref="700515738" value="t_colours" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Tecniques.bxml:1:4:1:5:1:1:1:2">
+<Attr>
+<Pos l="11" s="9" c="17"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Id typref="700515738" value="t_blacks" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Tecniques.bxml:1:4:1:5:1:1:2">
+<Attr>
+<Pos l="11" s="8" c="30"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Id typref="700515738" value="t_masters" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Tecniques.bxml:1:4:1:5:1:2">
+<Attr>
+<Pos l="11" s="9" c="42"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<EmptySet typref="3817003670" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Tecniques.bxml:1:4:1:5:2">
+<Attr>
+<Pos l="11" s="2" c="54"/>
+</Attr>
+</EmptySet>
+</Exp_Comparison>
+</Nary_Pred>
+</Define>
+<Define name="inv">
+<Attr>
+<Pos l="14" s="9" c="1"/>
+</Attr>
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="15" s="1" c="23"/>
+</Attr>
+<Id initialTag="artist_techniques" typref="4054678207" value="artist_techniques" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:6:1:1">
+<Attr>
+<Pos l="15" s="17" c="5"/>
+</Attr>
+</Id>
+<Binary_Exp initialTag="((ARTISTS) &lt;-&gt; (TECNIQUES))" op="&lt;-&gt;" typref="64633476">
+<Attr>
+<Pos l="15" s="3" c="33"/>
+</Attr>
+<Id typref="2434887175" value="ARTISTS" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:6:1:2:1">
+<Attr>
+<Pos l="15" s="7" c="25"/>
+</Attr>
+</Id>
+<Id typref="700515738" value="TECNIQUES" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:6:1:2:2">
+<Attr>
+<Pos l="15" s="9" c="37"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+</Define>
+<Define name="ass"/>
+<Define name="cst"/>
+<Proof_Obligation>
+<Comment>Inclusion dans une machine abstraite</Comment>
+<Tag>InstanciatedConstraintsLemmas</Tag>
+<Tag>CONSTRAINTS</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Goal>
+<Nary_Pred op="&amp;"/>
+</Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Inclusion dans une machine abstraite</Comment>
+<Tag>InstanciatedConstraintsLemmas</Tag>
+<Tag>CONSTRAINTS</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Goal>
+<Nary_Pred op="&amp;"/>
+</Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Inclusion dans une machine abstraite</Comment>
+<Tag>InstanciatedConstraintsLemmas</Tag>
+<Tag>CONSTRAINTS</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Goal>
+<Nary_Pred op="&amp;"/>
+</Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Initialisation dans une machine abstraite</Comment>
+<Tag>Initialisation</Tag>
+<Tag>Invariant</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Definition name="inprp"/>
+<Definition name="inext"/>
+<Definition name="seext"/>
+<Goal>
+<Sub_Calculus>
+<Nary_Sub op=";">
+<Attr>
+<Pos l="11" s="14" c="1"/>
+</Attr>
+<Nary_Sub op="||">
+<Simple_Assignement_Sub>
+<Variables>
+<Id typref="2434887175" value="whites" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Artists.bxml:1:5:1:1:1:1">
+<Attr>
+<Pos l="12" s="6" c="5"/>
+</Attr>
+</Id>
+</Variables>
+<Values>
+<EmptySet typref="3817003670" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Artists.bxml:1:5:1:1:2:1">
+<Attr>
+<Pos l="12" s="6" c="5"/>
+</Attr>
+</EmptySet>
+</Values>
+</Simple_Assignement_Sub>
+<Simple_Assignement_Sub>
+<Variables>
+<Id typref="2434887175" value="colours" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Artists.bxml:1:5:1:2:1:1">
+<Attr>
+<Pos l="12" s="7" c="21"/>
+</Attr>
+</Id>
+</Variables>
+<Values>
+<EmptySet typref="3817003670" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Artists.bxml:1:5:1:2:2:1">
+<Attr>
+<Pos l="12" s="7" c="21"/>
+</Attr>
+</EmptySet>
+</Values>
+</Simple_Assignement_Sub>
+<Simple_Assignement_Sub>
+<Variables>
+<Id typref="2434887175" value="blacks" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Artists.bxml:1:5:1:3:1:1">
+<Attr>
+<Pos l="12" s="6" c="38"/>
+</Attr>
+</Id>
+</Variables>
+<Values>
+<EmptySet typref="3817003670" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Artists.bxml:1:5:1:3:2:1">
+<Attr>
+<Pos l="12" s="6" c="38"/>
+</Attr>
+</EmptySet>
+</Values>
+</Simple_Assignement_Sub>
+<Simple_Assignement_Sub>
+<Variables>
+<Id typref="2434887175" value="masters" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Artists.bxml:1:5:1:4:1:1">
+<Attr>
+<Pos l="12" s="7" c="54"/>
+</Attr>
+</Id>
+</Variables>
+<Values>
+<EmptySet typref="3817003670" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Artists.bxml:1:5:1:4:2:1">
+<Attr>
+<Pos l="12" s="7" c="54"/>
+</Attr>
+</EmptySet>
+</Values>
+</Simple_Assignement_Sub>
+</Nary_Sub>
+<Attr>
+<Pos l="12" s="14" c="1"/>
+</Attr>
+<Nary_Sub op="||">
+<Simple_Assignement_Sub>
+<Variables>
+<Id typref="700515738" value="t_whites" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Tecniques.bxml:1:5:1:1:1:1">
+<Attr>
+<Pos l="13" s="8" c="3"/>
+</Attr>
+</Id>
+</Variables>
+<Values>
+<EmptySet typref="3817003670" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Tecniques.bxml:1:5:1:1:2:1">
+<Attr>
+<Pos l="13" s="8" c="3"/>
+</Attr>
+</EmptySet>
+</Values>
+</Simple_Assignement_Sub>
+<Simple_Assignement_Sub>
+<Variables>
+<Id typref="700515738" value="t_colours" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Tecniques.bxml:1:5:1:2:1:1">
+<Attr>
+<Pos l="13" s="9" c="21"/>
+</Attr>
+</Id>
+</Variables>
+<Values>
+<EmptySet typref="3817003670" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Tecniques.bxml:1:5:1:2:2:1">
+<Attr>
+<Pos l="13" s="9" c="21"/>
+</Attr>
+</EmptySet>
+</Values>
+</Simple_Assignement_Sub>
+<Simple_Assignement_Sub>
+<Variables>
+<Id typref="700515738" value="t_blacks" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Tecniques.bxml:1:5:1:3:1:1">
+<Attr>
+<Pos l="13" s="8" c="40"/>
+</Attr>
+</Id>
+</Variables>
+<Values>
+<EmptySet typref="3817003670" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Tecniques.bxml:1:5:1:3:2:1">
+<Attr>
+<Pos l="13" s="8" c="40"/>
+</Attr>
+</EmptySet>
+</Values>
+</Simple_Assignement_Sub>
+<Simple_Assignement_Sub>
+<Variables>
+<Id typref="700515738" value="t_masters" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Tecniques.bxml:1:5:1:4:1:1">
+<Attr>
+<Pos l="13" s="9" c="58"/>
+</Attr>
+</Id>
+</Variables>
+<Values>
+<EmptySet typref="3817003670" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Tecniques.bxml:1:5:1:4:2:1">
+<Attr>
+<Pos l="13" s="9" c="58"/>
+</Attr>
+</EmptySet>
+</Values>
+</Simple_Assignement_Sub>
+</Nary_Sub>
+<Attr>
+<Pos l="16" s="14" c="1"/>
+</Attr>
+<Simple_Assignement_Sub>
+<Variables>
+<Id typref="4054678207" value="artist_techniques" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:7:1:1:1">
+<Attr>
+<Pos l="17" s="17" c="5"/>
+</Attr>
+</Id>
+</Variables>
+<Values>
+<EmptySet typref="3817003670" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:7:1:2:1">
+<Attr>
+<Pos l="17" s="17" c="5"/>
+</Attr>
+</EmptySet>
+</Values>
+</Simple_Assignement_Sub>
+</Nary_Sub>
+<Binary_Pred op="=&gt;">
+<Nary_Pred op="&amp;">
+<Attr>
+<Pos l="8" s="9" c="1"/>
+</Attr>
+<Nary_Pred op="&amp;">
+<Exp_Comparison initialTag="whites : POW( ARTISTS)" op="&lt;:">
+<Attr>
+<Pos l="9" s="2" c="12"/>
+</Attr>
+<Id typref="2434887175" value="whites" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Artists.bxml:1:4:1:1:1">
+<Attr>
+<Pos l="9" s="6" c="5"/>
+</Attr>
+</Id>
+<Id typref="2434887175" value="ARTISTS" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Artists.bxml:1:4:1:1:2">
+<Attr>
+<Pos l="9" s="7" c="15"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison initialTag="colours : POW( ARTISTS)" op="&lt;:">
+<Attr>
+<Pos l="9" s="2" c="34"/>
+</Attr>
+<Id typref="2434887175" value="colours" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Artists.bxml:1:4:1:2:1">
+<Attr>
+<Pos l="9" s="7" c="26"/>
+</Attr>
+</Id>
+<Id typref="2434887175" value="ARTISTS" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Artists.bxml:1:4:1:2:2">
+<Attr>
+<Pos l="9" s="7" c="37"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison initialTag="blacks : POW( ARTISTS)" op="&lt;:">
+<Attr>
+<Pos l="9" s="2" c="54"/>
+</Attr>
+<Id typref="2434887175" value="blacks" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Artists.bxml:1:4:1:3:1">
+<Attr>
+<Pos l="9" s="6" c="47"/>
+</Attr>
+</Id>
+<Id typref="2434887175" value="ARTISTS" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Artists.bxml:1:4:1:3:2">
+<Attr>
+<Pos l="9" s="7" c="57"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison initialTag="masters : POW( ARTISTS)" op="&lt;:">
+<Attr>
+<Pos l="9" s="2" c="75"/>
+</Attr>
+<Id typref="2434887175" value="masters" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Artists.bxml:1:4:1:4:1">
+<Attr>
+<Pos l="9" s="7" c="67"/>
+</Attr>
+</Id>
+<Id typref="2434887175" value="ARTISTS" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Artists.bxml:1:4:1:4:2">
+<Attr>
+<Pos l="9" s="7" c="78"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison initialTag="((((((((whites) /\ (colours))) /\ (blacks))) /\ (masters))) = ({}))" op="=">
+<Attr>
+<Pos l="10" s="1" c="46"/>
+</Attr>
+<Binary_Exp op="/\" typref="2434887175">
+<Attr>
+<Pos l="10" s="2" c="35"/>
+</Attr>
+<Binary_Exp op="/\" typref="2434887175">
+<Attr>
+<Pos l="10" s="2" c="25"/>
+</Attr>
+<Binary_Exp op="/\" typref="2434887175">
+<Attr>
+<Pos l="10" s="2" c="14"/>
+</Attr>
+<Id typref="2434887175" value="whites" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Artists.bxml:1:4:1:5:1:1:1:1">
+<Attr>
+<Pos l="10" s="6" c="7"/>
+</Attr>
+</Id>
+<Id typref="2434887175" value="colours" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Artists.bxml:1:4:1:5:1:1:1:2">
+<Attr>
+<Pos l="10" s="7" c="17"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Id typref="2434887175" value="blacks" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Artists.bxml:1:4:1:5:1:1:2">
+<Attr>
+<Pos l="10" s="6" c="28"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Id typref="2434887175" value="masters" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Artists.bxml:1:4:1:5:1:2">
+<Attr>
+<Pos l="10" s="7" c="38"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<EmptySet typref="3817003670" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Artists.bxml:1:4:1:5:2">
+<Attr>
+<Pos l="10" s="2" c="48"/>
+</Attr>
+</EmptySet>
+</Exp_Comparison>
+</Nary_Pred>
+<Attr>
+<Pos l="9" s="9" c="1"/>
+</Attr>
+<Nary_Pred op="&amp;">
+<Exp_Comparison initialTag="t_whites : POW( TECNIQUES)" op="&lt;:">
+<Attr>
+<Pos l="10" s="2" c="12"/>
+</Attr>
+<Id typref="700515738" value="t_whites" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Tecniques.bxml:1:4:1:1:1">
+<Attr>
+<Pos l="10" s="8" c="3"/>
+</Attr>
+</Id>
+<Id typref="700515738" value="TECNIQUES" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Tecniques.bxml:1:4:1:1:2">
+<Attr>
+<Pos l="10" s="9" c="15"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison initialTag="t_colours : POW( TECNIQUES)" op="&lt;:">
+<Attr>
+<Pos l="10" s="2" c="37"/>
+</Attr>
+<Id typref="700515738" value="t_colours" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Tecniques.bxml:1:4:1:2:1">
+<Attr>
+<Pos l="10" s="9" c="27"/>
+</Attr>
+</Id>
+<Id typref="700515738" value="TECNIQUES" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Tecniques.bxml:1:4:1:2:2">
+<Attr>
+<Pos l="10" s="9" c="40"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison initialTag="t_blacks : POW( TECNIQUES)" op="&lt;:">
+<Attr>
+<Pos l="10" s="2" c="61"/>
+</Attr>
+<Id typref="700515738" value="t_blacks" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Tecniques.bxml:1:4:1:3:1">
+<Attr>
+<Pos l="10" s="8" c="52"/>
+</Attr>
+</Id>
+<Id typref="700515738" value="TECNIQUES" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Tecniques.bxml:1:4:1:3:2">
+<Attr>
+<Pos l="10" s="9" c="64"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison initialTag="t_masters : POW( TECNIQUES)" op="&lt;:">
+<Attr>
+<Pos l="10" s="2" c="86"/>
+</Attr>
+<Id typref="700515738" value="t_masters" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Tecniques.bxml:1:4:1:4:1">
+<Attr>
+<Pos l="10" s="9" c="76"/>
+</Attr>
+</Id>
+<Id typref="700515738" value="TECNIQUES" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Tecniques.bxml:1:4:1:4:2">
+<Attr>
+<Pos l="10" s="9" c="89"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison initialTag="((((((((t_whites) /\ (t_colours))) /\ (t_blacks))) /\ (t_masters))) = ({}))" op="=">
+<Attr>
+<Pos l="11" s="1" c="52"/>
+</Attr>
+<Binary_Exp op="/\" typref="700515738">
+<Attr>
+<Pos l="11" s="2" c="39"/>
+</Attr>
+<Binary_Exp op="/\" typref="700515738">
+<Attr>
+<Pos l="11" s="2" c="27"/>
+</Attr>
+<Binary_Exp op="/\" typref="700515738">
+<Attr>
+<Pos l="11" s="2" c="14"/>
+</Attr>
+<Id typref="700515738" value="t_whites" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Tecniques.bxml:1:4:1:5:1:1:1:1">
+<Attr>
+<Pos l="11" s="8" c="5"/>
+</Attr>
+</Id>
+<Id typref="700515738" value="t_colours" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Tecniques.bxml:1:4:1:5:1:1:1:2">
+<Attr>
+<Pos l="11" s="9" c="17"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Id typref="700515738" value="t_blacks" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Tecniques.bxml:1:4:1:5:1:1:2">
+<Attr>
+<Pos l="11" s="8" c="30"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Id typref="700515738" value="t_masters" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Tecniques.bxml:1:4:1:5:1:2">
+<Attr>
+<Pos l="11" s="9" c="42"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<EmptySet typref="3817003670" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Tecniques.bxml:1:4:1:5:2">
+<Attr>
+<Pos l="11" s="2" c="54"/>
+</Attr>
+</EmptySet>
+</Exp_Comparison>
+</Nary_Pred>
+</Nary_Pred>
+<Tag goalTag="Invariant is preserved">
+<Nary_Pred op="&amp;">
+<Attr>
+<Pos l="14" s="9" c="1"/>
+</Attr>
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="15" s="1" c="23"/>
+</Attr>
+<Id initialTag="artist_techniques" typref="4054678207" value="artist_techniques" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:6:1:1">
+<Attr>
+<Pos l="15" s="17" c="5"/>
+</Attr>
+</Id>
+<Binary_Exp initialTag="((ARTISTS) &lt;-&gt; (TECNIQUES))" op="&lt;-&gt;" typref="64633476">
+<Attr>
+<Pos l="15" s="3" c="33"/>
+</Attr>
+<Id typref="2434887175" value="ARTISTS" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:6:1:2:1">
+<Attr>
+<Pos l="15" s="7" c="25"/>
+</Attr>
+</Id>
+<Id typref="700515738" value="TECNIQUES" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:6:1:2:2">
+<Attr>
+<Pos l="15" s="9" c="37"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+</Nary_Pred>
+</Tag>
+</Binary_Pred>
+</Sub_Calculus>
+</Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Operations dans une machine abstraite</Comment>
+<Tag>check_technical</Tag>
+<Tag>INVARIANT</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Definition name="inprp"/>
+<Definition name="inext"/>
+<Definition name="seext"/>
+<Definition name="inv"/>
+<Definition name="ass"/>
+<Hypothesis>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="20" s="1" c="12"/>
+</Attr>
+<Id typref="4007227516" value="aa" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:8:1:2:1:1:1">
+<Attr>
+<Pos l="20" s="2" c="9"/>
+</Attr>
+</Id>
+<Id typref="2434887175" value="ARTISTS" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:8:1:2:1:1:2">
+<Attr>
+<Pos l="20" s="7" c="14"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="20" s="1" c="27"/>
+</Attr>
+<Id typref="1390633129" value="tt" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:8:1:2:1:2:1">
+<Attr>
+<Pos l="20" s="2" c="24"/>
+</Attr>
+</Id>
+<Id typref="700515738" value="TECNIQUES" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:8:1:2:1:2:2">
+<Attr>
+<Pos l="20" s="9" c="29"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Binary_Pred op="=&gt;">
+<Attr>
+<Pos l="21" s="2" c="24"/>
+</Attr>
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="21" s="1" c="15"/>
+</Attr>
+<Id typref="4007227516" value="aa" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:8:1:2:1:3:1:1">
+<Attr>
+<Pos l="21" s="2" c="12"/>
+</Attr>
+</Id>
+<Id typref="2434887175" value="whites" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:8:1:2:1:3:1:2">
+<Attr>
+<Pos l="21" s="6" c="17"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="21" s="1" c="30"/>
+</Attr>
+<Id typref="1390633129" value="tt" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:8:1:2:1:3:2:1">
+<Attr>
+<Pos l="21" s="2" c="27"/>
+</Attr>
+</Id>
+<Id typref="700515738" value="t_whites" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:8:1:2:1:3:2:2">
+<Attr>
+<Pos l="21" s="8" c="32"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Binary_Pred>
+<Binary_Pred op="=&gt;">
+<Attr>
+<Pos l="21" s="2" c="58"/>
+</Attr>
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="21" s="1" c="48"/>
+</Attr>
+<Id typref="4007227516" value="aa" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:8:1:2:1:4:1:1">
+<Attr>
+<Pos l="21" s="2" c="45"/>
+</Attr>
+</Id>
+<Id typref="2434887175" value="colours" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:8:1:2:1:4:1:2">
+<Attr>
+<Pos l="21" s="7" c="50"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="21" s="1" c="64"/>
+</Attr>
+<Id typref="1390633129" value="tt" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:8:1:2:1:4:2:1">
+<Attr>
+<Pos l="21" s="2" c="61"/>
+</Attr>
+</Id>
+<Id typref="700515738" value="t_colours" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:8:1:2:1:4:2:2">
+<Attr>
+<Pos l="21" s="9" c="66"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Binary_Pred>
+<Binary_Pred op="=&gt;">
+<Attr>
+<Pos l="22" s="2" c="24"/>
+</Attr>
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="22" s="1" c="15"/>
+</Attr>
+<Id typref="4007227516" value="aa" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:8:1:2:1:5:1:1">
+<Attr>
+<Pos l="22" s="2" c="12"/>
+</Attr>
+</Id>
+<Id typref="2434887175" value="blacks" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:8:1:2:1:5:1:2">
+<Attr>
+<Pos l="22" s="6" c="17"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="22" s="1" c="30"/>
+</Attr>
+<Id typref="1390633129" value="tt" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:8:1:2:1:5:2:1">
+<Attr>
+<Pos l="22" s="2" c="27"/>
+</Attr>
+</Id>
+<Id typref="700515738" value="t_blacks" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:8:1:2:1:5:2:2">
+<Attr>
+<Pos l="22" s="8" c="32"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Binary_Pred>
+<Binary_Pred op="=&gt;">
+<Attr>
+<Pos l="22" s="2" c="58"/>
+</Attr>
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="22" s="1" c="48"/>
+</Attr>
+<Id typref="4007227516" value="aa" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:8:1:2:1:6:1:1">
+<Attr>
+<Pos l="22" s="2" c="45"/>
+</Attr>
+</Id>
+<Id typref="2434887175" value="masters" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:8:1:2:1:6:1:2">
+<Attr>
+<Pos l="22" s="7" c="50"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="22" s="1" c="64"/>
+</Attr>
+<Id typref="1390633129" value="tt" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:8:1:2:1:6:2:1">
+<Attr>
+<Pos l="22" s="2" c="61"/>
+</Attr>
+</Id>
+<Id typref="700515738" value="t_masters" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:8:1:2:1:6:2:2">
+<Attr>
+<Pos l="22" s="9" c="66"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Binary_Pred>
+</Nary_Pred>
+</Hypothesis>
+<Goal>
+<Sub_Calculus>
+<Simple_Assignement_Sub>
+<Variables>
+<Id typref="4054678207" value="artist_techniques" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:8:1:3:1:1:1">
+<Attr>
+<Pos l="24" s="17" c="9"/>
+</Attr>
+</Id>
+</Variables>
+<Values>
+<Binary_Exp op="\/" typref="4054678207">
+<Attr>
+<Pos l="24" s="17" c="9"/>
+</Attr>
+<Id typref="4054678207" value="artist_techniques" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:8:1:3:1:2:1:1">
+<Attr>
+<Pos l="24" s="17" c="30"/>
+</Attr>
+</Id>
+<Nary_Exp op="{" typref="4054678207">
+<Attr>
+<Pos l="24" s="1" c="51"/>
+</Attr>
+<Binary_Exp op="|-&gt;" typref="3053460804">
+<Attr>
+<Pos l="24" s="3" c="55"/>
+</Attr>
+<Id typref="4007227516" value="aa" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:8:1:3:1:2:1:2:1:1">
+<Attr>
+<Pos l="24" s="2" c="52"/>
+</Attr>
+</Id>
+<Id typref="1390633129" value="tt" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:8:1:3:1:2:1:2:1:2">
+<Attr>
+<Pos l="24" s="2" c="59"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Nary_Exp>
+</Binary_Exp>
+</Values>
+</Simple_Assignement_Sub>
+<Binary_Pred op="=&gt;">
+<Nary_Pred op="&amp;"/>
+<Tag goalTag="Invariant is preserved">
+<Nary_Pred op="&amp;">
+<Attr>
+<Pos l="14" s="9" c="1"/>
+</Attr>
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="15" s="1" c="23"/>
+</Attr>
+<Id initialTag="artist_techniques" typref="4054678207" value="artist_techniques" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:6:1:1">
+<Attr>
+<Pos l="15" s="17" c="5"/>
+</Attr>
+</Id>
+<Binary_Exp initialTag="((ARTISTS) &lt;-&gt; (TECNIQUES))" op="&lt;-&gt;" typref="64633476">
+<Attr>
+<Pos l="15" s="3" c="33"/>
+</Attr>
+<Id typref="2434887175" value="ARTISTS" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:6:1:2:1">
+<Attr>
+<Pos l="15" s="7" c="25"/>
+</Attr>
+</Id>
+<Id typref="700515738" value="TECNIQUES" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:6:1:2:2">
+<Attr>
+<Pos l="15" s="9" c="37"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+</Nary_Pred>
+</Tag>
+</Binary_Pred>
+</Sub_Calculus>
+</Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Tag>WellDefinednessConstraints</Tag>
+<Goal>
+<Tag goalTag="Well definedness">
+<Nary_Pred op="&amp;"/>
+</Tag>
+</Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Tag>WellDefinednessProperties</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Hypothesis/>
+<Goal>
+<Tag goalTag="Well definedness">
+<Nary_Pred op="&amp;">
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="=&gt;">
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="11" s="1" c="14"/>
+</Attr>
+<Id typref="2701647786" value="capacity" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:5:1:1:1">
+<Attr>
+<Pos l="11" s="8" c="5"/>
+</Attr>
+</Id>
+<Id typref="3603043417" value="NAT1" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:5:1:1:2">
+<Attr>
+<Pos l="11" s="4" c="16"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+</Nary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Nary_Pred>
+</Tag>
+</Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Tag>WellDefinednessInvariant</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Definition name="inprp"/>
+<Definition name="inext"/>
+<Definition name="seext"/>
+<Goal>
+<Tag goalTag="Well definedness">
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Tag>
+</Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Tag>WellDefinednessInitialisation</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Definition name="inprp"/>
+<Definition name="inext"/>
+<Definition name="seext"/>
+<Goal>
+<Tag goalTag="Well definedness">
+<Nary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Nary_Pred>
+</Tag>
+</Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Operations dans une machine abstraite</Comment>
+<Tag>WellDefinedness_Precondition_check_technical</Tag>
+<Tag>INVARIANT</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Definition name="inprp"/>
+<Definition name="inext"/>
+<Definition name="seext"/>
+<Definition name="inv"/>
+<Definition name="ass"/>
+<Goal>
+<Tag goalTag="Well definedness">
+<Nary_Pred op="&amp;">
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="=&gt;">
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="20" s="1" c="12"/>
+</Attr>
+<Id typref="4007227516" value="aa" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:8:1:2:1:1:1">
+<Attr>
+<Pos l="20" s="2" c="9"/>
+</Attr>
+</Id>
+<Id typref="2434887175" value="ARTISTS" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:8:1:2:1:1:2">
+<Attr>
+<Pos l="20" s="7" c="14"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="=&gt;">
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="20" s="1" c="27"/>
+</Attr>
+<Id typref="1390633129" value="tt" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:8:1:2:1:2:1">
+<Attr>
+<Pos l="20" s="2" c="24"/>
+</Attr>
+</Id>
+<Id typref="700515738" value="TECNIQUES" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:8:1:2:1:2:2">
+<Attr>
+<Pos l="20" s="9" c="29"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Nary_Pred op="&amp;">
+<Nary_Pred op="&amp;">
+<Binary_Pred op="=&gt;">
+<Attr>
+<Pos l="21" s="2" c="24"/>
+</Attr>
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="=&gt;">
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="21" s="1" c="15"/>
+</Attr>
+<Id typref="4007227516" value="aa" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:8:1:2:1:3:1:1">
+<Attr>
+<Pos l="21" s="2" c="12"/>
+</Attr>
+</Id>
+<Id typref="2434887175" value="whites" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:8:1:2:1:3:1:2">
+<Attr>
+<Pos l="21" s="6" c="17"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+</Nary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+<Binary_Pred op="=&gt;">
+<Binary_Pred op="=&gt;">
+<Attr>
+<Pos l="21" s="2" c="24"/>
+</Attr>
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="21" s="1" c="15"/>
+</Attr>
+<Id typref="4007227516" value="aa" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:8:1:2:1:3:1:1">
+<Attr>
+<Pos l="21" s="2" c="12"/>
+</Attr>
+</Id>
+<Id typref="2434887175" value="whites" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:8:1:2:1:3:1:2">
+<Attr>
+<Pos l="21" s="6" c="17"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="21" s="1" c="30"/>
+</Attr>
+<Id typref="1390633129" value="tt" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:8:1:2:1:3:2:1">
+<Attr>
+<Pos l="21" s="2" c="27"/>
+</Attr>
+</Id>
+<Id typref="700515738" value="t_whites" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:8:1:2:1:3:2:2">
+<Attr>
+<Pos l="21" s="8" c="32"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Binary_Pred>
+<Nary_Pred op="&amp;">
+<Nary_Pred op="&amp;">
+<Binary_Pred op="=&gt;">
+<Attr>
+<Pos l="21" s="2" c="58"/>
+</Attr>
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="=&gt;">
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="21" s="1" c="48"/>
+</Attr>
+<Id typref="4007227516" value="aa" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:8:1:2:1:4:1:1">
+<Attr>
+<Pos l="21" s="2" c="45"/>
+</Attr>
+</Id>
+<Id typref="2434887175" value="colours" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:8:1:2:1:4:1:2">
+<Attr>
+<Pos l="21" s="7" c="50"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+</Nary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+<Binary_Pred op="=&gt;">
+<Binary_Pred op="=&gt;">
+<Attr>
+<Pos l="21" s="2" c="58"/>
+</Attr>
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="21" s="1" c="48"/>
+</Attr>
+<Id typref="4007227516" value="aa" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:8:1:2:1:4:1:1">
+<Attr>
+<Pos l="21" s="2" c="45"/>
+</Attr>
+</Id>
+<Id typref="2434887175" value="colours" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:8:1:2:1:4:1:2">
+<Attr>
+<Pos l="21" s="7" c="50"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="21" s="1" c="64"/>
+</Attr>
+<Id typref="1390633129" value="tt" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:8:1:2:1:4:2:1">
+<Attr>
+<Pos l="21" s="2" c="61"/>
+</Attr>
+</Id>
+<Id typref="700515738" value="t_colours" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:8:1:2:1:4:2:2">
+<Attr>
+<Pos l="21" s="9" c="66"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Binary_Pred>
+<Nary_Pred op="&amp;">
+<Nary_Pred op="&amp;">
+<Binary_Pred op="=&gt;">
+<Attr>
+<Pos l="22" s="2" c="24"/>
+</Attr>
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="=&gt;">
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="22" s="1" c="15"/>
+</Attr>
+<Id typref="4007227516" value="aa" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:8:1:2:1:5:1:1">
+<Attr>
+<Pos l="22" s="2" c="12"/>
+</Attr>
+</Id>
+<Id typref="2434887175" value="blacks" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:8:1:2:1:5:1:2">
+<Attr>
+<Pos l="22" s="6" c="17"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+</Nary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+<Binary_Pred op="=&gt;">
+<Binary_Pred op="=&gt;">
+<Attr>
+<Pos l="22" s="2" c="24"/>
+</Attr>
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="22" s="1" c="15"/>
+</Attr>
+<Id typref="4007227516" value="aa" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:8:1:2:1:5:1:1">
+<Attr>
+<Pos l="22" s="2" c="12"/>
+</Attr>
+</Id>
+<Id typref="2434887175" value="blacks" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:8:1:2:1:5:1:2">
+<Attr>
+<Pos l="22" s="6" c="17"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="22" s="1" c="30"/>
+</Attr>
+<Id typref="1390633129" value="tt" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:8:1:2:1:5:2:1">
+<Attr>
+<Pos l="22" s="2" c="27"/>
+</Attr>
+</Id>
+<Id typref="700515738" value="t_blacks" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:8:1:2:1:5:2:2">
+<Attr>
+<Pos l="22" s="8" c="32"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Binary_Pred>
+<Nary_Pred op="&amp;">
+<Nary_Pred op="&amp;">
+<Binary_Pred op="=&gt;">
+<Attr>
+<Pos l="22" s="2" c="58"/>
+</Attr>
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="=&gt;">
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="22" s="1" c="48"/>
+</Attr>
+<Id typref="4007227516" value="aa" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:8:1:2:1:6:1:1">
+<Attr>
+<Pos l="22" s="2" c="45"/>
+</Attr>
+</Id>
+<Id typref="2434887175" value="masters" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:8:1:2:1:6:1:2">
+<Attr>
+<Pos l="22" s="7" c="50"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+</Nary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Nary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Nary_Pred>
+</Tag>
+</Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Operations dans une machine abstraite</Comment>
+<Tag>WellDefinedness_check_technical</Tag>
+<Tag>INVARIANT</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Definition name="inprp"/>
+<Definition name="inext"/>
+<Definition name="seext"/>
+<Definition name="inv"/>
+<Definition name="ass"/>
+<Hypothesis>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="20" s="1" c="12"/>
+</Attr>
+<Id typref="4007227516" value="aa" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:8:1:2:1:1:1">
+<Attr>
+<Pos l="20" s="2" c="9"/>
+</Attr>
+</Id>
+<Id typref="2434887175" value="ARTISTS" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:8:1:2:1:1:2">
+<Attr>
+<Pos l="20" s="7" c="14"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="20" s="1" c="27"/>
+</Attr>
+<Id typref="1390633129" value="tt" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:8:1:2:1:2:1">
+<Attr>
+<Pos l="20" s="2" c="24"/>
+</Attr>
+</Id>
+<Id typref="700515738" value="TECNIQUES" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:8:1:2:1:2:2">
+<Attr>
+<Pos l="20" s="9" c="29"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Binary_Pred op="=&gt;">
+<Attr>
+<Pos l="21" s="2" c="24"/>
+</Attr>
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="21" s="1" c="15"/>
+</Attr>
+<Id typref="4007227516" value="aa" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:8:1:2:1:3:1:1">
+<Attr>
+<Pos l="21" s="2" c="12"/>
+</Attr>
+</Id>
+<Id typref="2434887175" value="whites" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:8:1:2:1:3:1:2">
+<Attr>
+<Pos l="21" s="6" c="17"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="21" s="1" c="30"/>
+</Attr>
+<Id typref="1390633129" value="tt" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:8:1:2:1:3:2:1">
+<Attr>
+<Pos l="21" s="2" c="27"/>
+</Attr>
+</Id>
+<Id typref="700515738" value="t_whites" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:8:1:2:1:3:2:2">
+<Attr>
+<Pos l="21" s="8" c="32"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Binary_Pred>
+<Binary_Pred op="=&gt;">
+<Attr>
+<Pos l="21" s="2" c="58"/>
+</Attr>
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="21" s="1" c="48"/>
+</Attr>
+<Id typref="4007227516" value="aa" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:8:1:2:1:4:1:1">
+<Attr>
+<Pos l="21" s="2" c="45"/>
+</Attr>
+</Id>
+<Id typref="2434887175" value="colours" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:8:1:2:1:4:1:2">
+<Attr>
+<Pos l="21" s="7" c="50"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="21" s="1" c="64"/>
+</Attr>
+<Id typref="1390633129" value="tt" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:8:1:2:1:4:2:1">
+<Attr>
+<Pos l="21" s="2" c="61"/>
+</Attr>
+</Id>
+<Id typref="700515738" value="t_colours" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:8:1:2:1:4:2:2">
+<Attr>
+<Pos l="21" s="9" c="66"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Binary_Pred>
+<Binary_Pred op="=&gt;">
+<Attr>
+<Pos l="22" s="2" c="24"/>
+</Attr>
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="22" s="1" c="15"/>
+</Attr>
+<Id typref="4007227516" value="aa" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:8:1:2:1:5:1:1">
+<Attr>
+<Pos l="22" s="2" c="12"/>
+</Attr>
+</Id>
+<Id typref="2434887175" value="blacks" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:8:1:2:1:5:1:2">
+<Attr>
+<Pos l="22" s="6" c="17"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="22" s="1" c="30"/>
+</Attr>
+<Id typref="1390633129" value="tt" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:8:1:2:1:5:2:1">
+<Attr>
+<Pos l="22" s="2" c="27"/>
+</Attr>
+</Id>
+<Id typref="700515738" value="t_blacks" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:8:1:2:1:5:2:2">
+<Attr>
+<Pos l="22" s="8" c="32"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Binary_Pred>
+<Binary_Pred op="=&gt;">
+<Attr>
+<Pos l="22" s="2" c="58"/>
+</Attr>
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="22" s="1" c="48"/>
+</Attr>
+<Id typref="4007227516" value="aa" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:8:1:2:1:6:1:1">
+<Attr>
+<Pos l="22" s="2" c="45"/>
+</Attr>
+</Id>
+<Id typref="2434887175" value="masters" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:8:1:2:1:6:1:2">
+<Attr>
+<Pos l="22" s="7" c="50"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="22" s="1" c="64"/>
+</Attr>
+<Id typref="1390633129" value="tt" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:8:1:2:1:6:2:1">
+<Attr>
+<Pos l="22" s="2" c="61"/>
+</Attr>
+</Id>
+<Id typref="700515738" value="t_masters" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:8:1:2:1:6:2:2">
+<Attr>
+<Pos l="22" s="9" c="66"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Binary_Pred>
+</Nary_Pred>
+</Hypothesis>
+<Goal>
+<Tag goalTag="Well definedness">
+<Nary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Tag>
+</Goal>
+</Proof_Obligation>
+<TypeInfos>
+<Type id="2701647786">
+<Id value="INTEGER" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:9:1:1"/>
+</Type>
+<Type id="4054678207">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id value="ARTISTS" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:9:2:1:1:1"/>
+<Id value="TECNIQUES" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:9:2:1:1:2"/>
+</Binary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="3603043417">
+<Unary_Exp op="POW">
+<Id value="INTEGER" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:9:3:1:1"/>
+</Unary_Exp>
+</Type>
+<Type id="64633476">
+<Unary_Exp op="POW">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id value="ARTISTS" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:9:4:1:1:1:1"/>
+<Id value="TECNIQUES" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:9:4:1:1:1:2"/>
+</Binary_Exp>
+</Unary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="2434887175">
+<Unary_Exp op="POW">
+<Id value="ARTISTS" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:9:5:1:1"/>
+</Unary_Exp>
+</Type>
+<Type id="700515738">
+<Unary_Exp op="POW">
+<Id value="TECNIQUES" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:9:6:1:1"/>
+</Unary_Exp>
+</Type>
+<Type id="3817003670">
+<Unary_Exp op="POW">
+<Generic_Type tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:9:7:1:1"/>
+</Unary_Exp>
+</Type>
+<Type id="4007227516">
+<Id value="ARTISTS" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:9:8:1"/>
+</Type>
+<Type id="1390633129">
+<Id value="TECNIQUES" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:9:9:1"/>
+</Type>
+<Type id="3053460804">
+<Binary_Exp op="*">
+<Id value="ARTISTS" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:9:10:1:1"/>
+<Id value="TECNIQUES" tag="C:\Users\seu_raul\Documents\Metodos Formais - SeuRaul\MartialAcademy\bdp\MartialAcademy.bxml:1:9:10:1:2"/>
+</Binary_Exp>
+</Type>
+<Type id="2434887175">
+<Unary_Exp op="POW">
+<Id value="ARTISTS" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Artists.bxml:1:7:1:1:1"/>
+</Unary_Exp>
+</Type>
+<Type id="1918468540">
+<Unary_Exp op="POW">
+<Unary_Exp op="POW">
+<Id value="ARTISTS" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Artists.bxml:1:7:2:1:1:1"/>
+</Unary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="2701647786">
+<Id value="INTEGER" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Artists.bxml:1:7:3:1"/>
+</Type>
+<Type id="3817003670">
+<Unary_Exp op="POW">
+<Generic_Type tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Artists.bxml:1:7:4:1:1"/>
+</Unary_Exp>
+</Type>
+<Type id="4007227516">
+<Id value="ARTISTS" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Artists.bxml:1:7:5:1"/>
+</Type>
+<Type id="700515738">
+<Unary_Exp op="POW">
+<Id value="TECNIQUES" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Tecniques.bxml:1:7:1:1:1"/>
+</Unary_Exp>
+</Type>
+<Type id="892435817">
+<Unary_Exp op="POW">
+<Unary_Exp op="POW">
+<Id value="TECNIQUES" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Tecniques.bxml:1:7:2:1:1:1"/>
+</Unary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="2701647786">
+<Id value="INTEGER" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Tecniques.bxml:1:7:3:1"/>
+</Type>
+<Type id="3817003670">
+<Unary_Exp op="POW">
+<Generic_Type tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Tecniques.bxml:1:7:4:1:1"/>
+</Unary_Exp>
+</Type>
+<Type id="1390633129">
+<Id value="TECNIQUES" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Tecniques.bxml:1:7:5:1"/>
+</Type>
+<Type id="3603043417">
+<Unary_Exp op="POW">
+<Id value="INTEGER" tag="C:/Users/seu_raul/Documents/Metodos Formais - SeuRaul/MartialAcademy/bdp\Tecniques.bxml:1:7:6:1:1"/>
+</Unary_Exp>
+</Type>
+</TypeInfos>
+</Proof_Obligations>
